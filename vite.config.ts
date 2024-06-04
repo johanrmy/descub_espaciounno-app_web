@@ -6,7 +6,9 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    host: true
+    host: true,
+    port: 80,
+    
   },
   plugins: [react(), svgr()],
   resolve: {
