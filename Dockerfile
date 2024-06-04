@@ -2,7 +2,7 @@ FROM node:18
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y git
+RUN apt-get update && apt-get install -y git vite
 
 ARG GITHUB_TOKEN
 RUN git clone https://johanrmy:${GITHUB_TOKEN}@github.com/johanrmy/descub_espaciounno-app_web.git .
