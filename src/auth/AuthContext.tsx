@@ -37,7 +37,7 @@ const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 
   const loginAction = async (data: { email: string; password: string }) => {
     try {
-      const response = await axios.post("http://localhost:3000/api/descub", data);
+      const response = await axios.post(`${import.meta.env.VITE_API_HOST}/descub`, data);
       const { token, user: userData } = response.data;
       if (token && userData) {
         setUser(userData);
