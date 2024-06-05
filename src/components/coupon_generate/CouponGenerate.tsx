@@ -58,7 +58,7 @@ const CouponGenerate: React.FC = () => {
                     </Link>
                 </div>
             </div>
-            <div className="grid grid-rows-1 grid-cols-1 2xl:grid-cols-[1020px_1fr]">
+            <div className="grid grid-rows-1 grid-cols-1 2xl:grid-cols-[820px_1fr]">
                 <div className="flex flex-col justify-between px-0 md:px-6">
                     <div className='flex flex-col lg:flex-row justify-around items-center'>
                         <InfoCard data={{
