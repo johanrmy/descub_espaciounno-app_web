@@ -128,7 +128,6 @@ const CreateMural: React.FC = () => {
                         <FirstGroupFields clickedCoords={clickedCoords} handleInputChange={handleInputChange} handleNewMarkerCoords={handleNewMarkerCoords} muralData={muralData} />
                         <SecondGroupFields handleInputChange={handleInputChange} handleFileChange={handleFileChange} muralData={muralData} />
                     </div>
-                    <button type="submit" className="btn btn-primary">Crear</button>
                 </form>
             </Card>
         </Layout>
