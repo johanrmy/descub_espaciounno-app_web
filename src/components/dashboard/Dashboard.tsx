@@ -53,7 +53,6 @@ const { currentItems, pageCount, handlePageClick } = useTableData<Scan>({
               <TableBody>
                 {currentItems.map((scan) => (
                   <TableRowItem key={scan.id}>
-                      <TableItem>{scan.id}</TableItem>
                       <TableItem>{scan.partnership_id}</TableItem>
                       <TableItem>{new Date(scan.create_datetime).toLocaleString()}</TableItem>
                       <TableItem>{scan.model}</TableItem>

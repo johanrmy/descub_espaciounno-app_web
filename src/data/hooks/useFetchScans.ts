@@ -20,7 +20,7 @@ export const useFetchScans = () => {
                     setScans(scansFetch.scans || []);
                     setLoading(false);
                     if (scansFetch.scans) {
-                        setColumnHeaders(['ID','Partnership','Create Record','Model'])
+                        setColumnHeaders(['Partnership','Create Record','Model'])
                     }
                 }
             } catch (error) {
