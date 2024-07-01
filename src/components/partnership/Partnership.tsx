@@ -66,9 +66,8 @@ const PartnershipComponent: React.FC = () => {
                                 <TableItem>{partnership.id}</TableItem>
                                 <TableItem>{new Date(partnership.create_datetime).toLocaleDateString()}</TableItem>
                                 <TableItem className='italic'>
-                                    <Link to={`/artistas/read/${partnership.artist.id}`}>{partnership.artist.id}</Link>
+                                    <Link to={`/artistas/read/${partnership.artist.id}`}>{partnership.artist.nickname}</Link>
                                 </TableItem>
-                                <TableItem>{partnership.artist.nickname}</TableItem>
                                 <TableItem className='italic'>
                                     <Link to={`/murales/read/${partnership.mural.id}`}>{partnership.mural.id}</Link>
                                 </TableItem>

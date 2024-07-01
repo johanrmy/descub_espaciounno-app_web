@@ -20,7 +20,7 @@ export const useFetchPartnerships = () => {
                     setPartnerships(partnershipsFetch.data || []);
                     setLoading(false);
                     if (partnershipsFetch.data) {
-                        setColumnHeaders(['ID','Record creation','Artist ID','Nickname','Mural ID','Name','Actions'])
+                        setColumnHeaders(['ID','Record creation','Nickname','Mural ID','Name','Actions'])
                     }
                 }
             } catch (error) {
